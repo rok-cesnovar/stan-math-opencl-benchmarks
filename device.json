@@ -1,0 +1,20 @@
+{
+    "i7": {
+        "device-type": "cpu",
+        "opencl": 0,
+        "CPU": "Intel Core i7-4790 @ 3.60 Hz",
+        "GPU": ""
+    },
+    "i7-opencl": {
+        "device-type": "cpu",
+        "opencl": 1,
+        "CPU": "Intel Core i7-4790 @ 3.60 Hz",
+        "GPU": ""
+    },
+    "radeonvii": {
+        "device-type": "gpu", 
+        "opencl": 1,
+        "CPU": "Intel Core i7-4790 @ 3.60 Hz",
+        "GPU": "AMD Radeon VII"
+    }
+}
