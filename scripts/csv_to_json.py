@@ -89,7 +89,6 @@ def process_file(csv_filename):
 
 
 for f in files_in_folder("csv"):
-    print(f)
     process_file(f)
 
 for f in csv_data:
