@@ -1,13 +1,3 @@
-2021-01-01 12:32:51
-Running ./benchmarks/benchmark
-Run on (8 X 4000 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x1)
-Load Average: 1.09, 1.28, 1.57
-***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
 "gamma_lpdf_Prim_vector_Prim_real_Prim_vector/1/manual_time_mean",5,243997,63114.5,ns,,,,,
 "gamma_lpdf_Prim_vector_Prim_real_Prim_vector/1/manual_time_median",5,245525,62795.8,ns,,,,,

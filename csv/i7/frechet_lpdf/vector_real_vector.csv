@@ -1,13 +1,3 @@
-2021-01-01 10:28:07
-Running ./benchmarks/benchmark
-Run on (8 X 4000 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x1)
-Load Average: 1.31, 1.39, 1.38
-***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
 "frechet_lpdf_Prim_vector_Prim_real_Prim_vector/1/manual_time_mean",5,83.1841,106.66,ns,,,,,
 "frechet_lpdf_Prim_vector_Prim_real_Prim_vector/1/manual_time_median",5,81.8173,105.049,ns,,,,,
