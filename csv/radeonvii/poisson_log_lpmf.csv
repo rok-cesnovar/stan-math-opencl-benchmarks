@@ -1,14 +1,4 @@
-2021-01-02 09:56:48
-Running ./benchmarks/benchmark
-Run on (8 X 4000 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x1)
-Load Average: 1.27, 1.28, 1.30
-***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
-name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
+ations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
 "poisson_log_lpmf_Prim_int1_Prim_real/1/manual_time_mean",5,196438,44109.8,ns,,,,,
 "poisson_log_lpmf_Prim_int1_Prim_real/1/manual_time_median",5,192464,42890.5,ns,,,,,
 "poisson_log_lpmf_Prim_int1_Prim_real/1/manual_time_stddev",5,7903.72,2872.3,ns,,,,,
