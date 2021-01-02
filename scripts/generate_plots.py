@@ -61,6 +61,8 @@ def plot_speedup(data, function_name, args, base_device, speedup_device, plot_lo
     ax.grid()
     ax.legend()
     ax.set_title(function_name + "(" + args + ")")
+    if not os.path.isdir("figs"):
+        os.mkdir("figs")
     fig_dir = "figs/"+speedup_device+"_vs_"+base_device
     if not os.path.isdir(fig_dir):
         os.mkdir(fig_dir)
@@ -69,7 +71,7 @@ def plot_speedup(data, function_name, args, base_device, speedup_device, plot_lo
     else:
         suffix = ""
     fig_name = fig_dir + "/" + function_name + "__" + args.replace(",", "-").replace(" ", "_")+suffix
-    if not os.path.isfile(fig_name):
+    if not os.path.isfile(fig_name+".png"):
         fig.savefig(fig_name, bbox_inches="tight", dpi=300)
     plt.close()
 
