@@ -68,7 +68,9 @@ def plot_speedup(data, function_name, args, base_device, speedup_device, plot_lo
         suffix = "__log_y"
     else:
         suffix = ""
-    fig.savefig(fig_dir + "/" + function_name + "__" + args.replace(",", "-").replace(" ", "_")+suffix, bbox_inches="tight", dpi=300)
+    fig_name = fig_dir + "/" + function_name + "__" + args.replace(",", "-").replace(" ", "_")+suffix
+    if not os.path.isfile(fig_name):
+        fig.savefig(fig_name, bbox_inches="tight", dpi=300)
     plt.close()
 
 def files_in_folder(folder):
