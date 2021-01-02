@@ -70,23 +70,21 @@ def process_file(csv_filename):
             function, types, data_params, s, t = parse_sig(i[0])
             if not (function in csv_data):
                 csv_data[function] = {}
-            if not (device_label in csv_data[function]):
-                csv_data[function][device_label] = {}
-            if not (types in csv_data[function][device_label]):
-                csv_data[function][device_label][types] = {}
-            if not (data_params in csv_data[function][device_label][types]):
-                csv_data[function][device_label][types][data_params] = {
+            if not (types in csv_data[function]):
+                csv_data[function][types] = {}
+            if not (data_params in csv_data[function][types]):
+                csv_data[function][types][data_params] = {}
+            if not (device_label in csv_data[function][types][data_params]):
+                csv_data[function][types][data_params][device_label] = {
                     "mean": [[],[]],
                     "stddev": [[],[]]
                 }
             if t == "manual_time_mean":
-                csv_data[function][device_label][types][data_params]["mean"][0].append(s)
-                csv_data[function][device_label][types][data_params]["mean"][1].append(float(i[2]))
+                csv_data[function][types][data_params][device_label]["mean"][0].append(s)
+                csv_data[function][types][data_params][device_label]["mean"][1].append(float(i[2]))
             if t == "manual_time_stddev":
-                csv_data[function][device_label][types][data_params]["stddev"][0].append(s)
-                csv_data[function][device_label][types][data_params]["stddev"][1].append(float(i[2]))
-
-
+                csv_data[function][types][data_params][device_label]["stddev"][0].append(s)
+                csv_data[function][types][data_params][device_label]["stddev"][1].append(float(i[2]))
 
 for f in files_in_folder("csv"):
     process_file(f)
