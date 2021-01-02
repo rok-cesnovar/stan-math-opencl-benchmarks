@@ -1,3 +1,4 @@
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
 "beta_lpdf_Prim_real_Prim_real_Prim_vector/1/manual_time_mean",5,100.943,124.645,ns,,,,,
 "beta_lpdf_Prim_real_Prim_real_Prim_vector/1/manual_time_median",5,98.2532,121.597,ns,,,,,
 "beta_lpdf_Prim_real_Prim_real_Prim_vector/1/manual_time_stddev",5,6.45111,7.43832,ns,,,,,
