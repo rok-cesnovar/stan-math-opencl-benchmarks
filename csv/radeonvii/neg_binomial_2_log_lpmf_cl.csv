@@ -1,26 +1,4 @@
-2021-01-03 08:35:53
-Running ./benchmarks/benchmark
-Run on (8 X 4000 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x1)
-Load Average: 1.41, 1.24, 1.13
-***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_real/1/manual_time_mean",5,100.353,123.863,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_real/1/manual_time_median",5,98.6244,121.857,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_real/1/manual_time_stddev",5,4.71387,5.49997,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Rev_real/1/manual_time_mean",5,128.571,152.961,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Rev_real/1/manual_time_median",5,128.478,152.773,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Prim_real_Rev_real/1/manual_time_stddev",5,0.562297,0.639224,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Prim_real/1/manual_time_mean",5,107.045,131.452,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Prim_real/1/manual_time_median",5,107.053,131.451,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Prim_real/1/manual_time_stddev",5,0.0925032,0.105932,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Rev_real/1/manual_time_mean",5,131.232,156.915,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Rev_real/1/manual_time_median",5,131.076,156.782,ns,,,,,
-"neg_binomial_2_log_lpmf_Prim_int_Rev_real_Rev_real/1/manual_time_stddev",5,0.364723,0.414946,ns,,,,,
 "neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_vector/1/manual_time_mean",5,210054,54018.2,ns,,,,,
 "neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_vector/1/manual_time_median",5,207602,52935.6,ns,,,,,
 "neg_binomial_2_log_lpmf_Prim_int_Prim_real_Prim_vector/1/manual_time_stddev",5,5819.31,3742.32,ns,,,,,
