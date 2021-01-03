@@ -89,13 +89,17 @@ def files_in_folder(folder):
     return files
 
 base_device = "i7"
-speedup_device = "radeonvii"
+speedup_device = "i7cl"
+
+generate_for = ["beta_lpdf", "beta_proportion_lpdf"]
 
 for f_name in files_in_folder("json"):
     function_name = f_name.split("/")[1].split(".")[0]
-    print(function_name)
-    with open(f_name) as f:
-        data = json.load(f)
-    for args in data:
-        plot_speedup(data[args], function_name, args, base_device, speedup_device)
-        plot_speedup(data[args], function_name, args, base_device, speedup_device, plot_log_y = True)
+    if function_name in generate_for:
+        print(function_name)
+        with open(f_name) as f:
+            data = json.load(f)
+        for args in data:
+            print(args)
+            plot_speedup(data[args], function_name, args, base_device, speedup_device)
+            plot_speedup(data[args], function_name, args, base_device, speedup_device, plot_log_y = True)
