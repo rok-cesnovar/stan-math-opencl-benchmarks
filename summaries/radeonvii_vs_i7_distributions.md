@@ -1326,6 +1326,13 @@ poisson_log_lpmf | array[] int,real | data,data | 65536 | 22.21
 poisson_log_lpmf | array[] int,vector | data,data | 65536 | 43.84
 poisson_log_lpmf | int,vector | data,data | 65536 | 54.36
   |   |   |   |  
+poisson_lpmf | int,vector | data,param | 1048576 | 2.24
+poisson_lpmf | array[] int,vector | data,param | 262144 | 2.78
+poisson_lpmf | array[] int,real | data,param | 65536 | 32.79
+poisson_lpmf | array[] int,real | data,data | 65536 | 37.04
+poisson_lpmf | array[] int,vector | data,data | 65536 | 48.48
+poisson_lpmf | int,vector | data,data | 65536 | 54.9
+  |   |   |   |  
 rayleigh_lpdf | vector,real | param,data | 1048576 | 2.02
 rayleigh_lpdf | vector,vector | param,param | 262144 | 2.26
 rayleigh_lpdf | vector,real | param,param | 1048576 | 2.33

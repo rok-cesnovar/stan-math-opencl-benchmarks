@@ -89,9 +89,9 @@ def files_in_folder(folder):
     return files
 
 base_device = "i7"
-speedup_device = "i7cl"
+speedup_device = "radeonvii"
 
-generate_for = ["beta_lpdf", "beta_proportion_lpdf"]
+generate_for = ["poisson_lpmf"]
 
 for f_name in files_in_folder("json"):
     function_name = f_name.split("/")[1].split(".")[0]
